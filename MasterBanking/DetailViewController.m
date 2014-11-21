@@ -21,6 +21,18 @@
     self.address.text = self.bank.address;
     self.phone.text = self.bank.phoneNumber;
     self.email.text = self.bank.email;
+    
+    CLLocationCoordinate2D coord = self.bank.location;
+    //latLab.text = [NSString stringWithFormat:@"%f", coord.latitude];
+    //longLab.text = [NSString stringWithFormat:@"%f", coord.longitude];
+    
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(coord, 10000, 10000);
+    [self.map setRegion:region];
+    MKPointAnnotation *point = [[MKPointAnnotation alloc] init];
+    point.coordinate = coord;
+    point.title = self.bank.name;
+    [self.map addAnnotation:point];
+    [self.map selectAnnotation:point animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
