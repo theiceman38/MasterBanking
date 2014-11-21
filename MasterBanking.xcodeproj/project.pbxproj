@@ -20,6 +20,7 @@
 		A641CFBF1A1F373100DCDFF9 /* Client.m in Sources */ = {isa = PBXBuildFile; fileRef = A641CFBE1A1F373100DCDFF9 /* Client.m */; };
 		A641CFC21A1F3F9400DCDFF9 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A641CFC11A1F3F9400DCDFF9 /* DetailViewController.m */; };
 		A641CFC41A1F42F300DCDFF9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A641CFC31A1F42F300DCDFF9 /* MapKit.framework */; };
+		A641CFC71A1F480200DCDFF9 /* ClientTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A641CFC61A1F480200DCDFF9 /* ClientTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		A641CFC01A1F3F9400DCDFF9 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		A641CFC11A1F3F9400DCDFF9 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		A641CFC31A1F42F300DCDFF9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A641CFC51A1F480200DCDFF9 /* ClientTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientTableViewController.h; sourceTree = "<group>"; };
+		A641CFC61A1F480200DCDFF9 /* ClientTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,8 @@
 				A641CFBE1A1F373100DCDFF9 /* Client.m */,
 				A641CFC01A1F3F9400DCDFF9 /* DetailViewController.h */,
 				A641CFC11A1F3F9400DCDFF9 /* DetailViewController.m */,
+				A641CFC51A1F480200DCDFF9 /* ClientTableViewController.h */,
+				A641CFC61A1F480200DCDFF9 /* ClientTableViewController.m */,
 			);
 			path = MasterBanking;
 			sourceTree = "<group>";
@@ -306,6 +311,7 @@
 				A641CF941A1F2F0700DCDFF9 /* AppDelegate.m in Sources */,
 				A641CFBF1A1F373100DCDFF9 /* Client.m in Sources */,
 				A641CF911A1F2F0700DCDFF9 /* main.m in Sources */,
+				A641CFC71A1F480200DCDFF9 /* ClientTableViewController.m in Sources */,
 				A641CFB91A1F32B600DCDFF9 /* WebService.m in Sources */,
 				A641CFB61A1F329200DCDFF9 /* MasterTableViewController.m in Sources */,
 				A641CFC21A1F3F9400DCDFF9 /* DetailViewController.m in Sources */,

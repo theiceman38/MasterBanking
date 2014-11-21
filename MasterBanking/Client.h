@@ -10,7 +10,9 @@
 
 @interface Client : NSObject
 
-@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *numberClient;
 @property (nonatomic, strong) NSString *dateClient;
+
++ (Client*)instanceFromDictionary:(NSDictionary*)dictionary;
 
 @end

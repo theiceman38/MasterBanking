@@ -10,5 +10,19 @@
 
 @implementation Client
 
++ (Client*)instanceFromDictionary:(NSDictionary*)dictionary {
+    Client *instance = [[Client alloc] init];
+    
+    for (NSString *key in dictionary) {
+        if ([key isEqualToString:@"client_number"]) {
+            [instance setNumberClient:[dictionary objectForKey:key]];
+        } else if ([key isEqualToString:@"date"]) {
+            [instance setDateClient:[dictionary objectForKey:key]];
+        }
+    }
+    
+    return instance;
+}
+
 
 @end

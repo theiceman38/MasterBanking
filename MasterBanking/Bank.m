@@ -28,7 +28,13 @@
         } else if ([key isEqualToString:@"latitude"]) {
             coord.latitude = [[dictionary objectForKey:key] doubleValue];
         } else if ([key isEqualToString:@"clients"]) {
+            instance.clients = [[NSMutableArray alloc] init];
             
+            for (NSDictionary *dict in [dictionary objectForKey:key]) {
+                Client *client = [Client instanceFromDictionary:dict];
+                NSLog(@"%@", client.numberClient);
+                [instance.clients addObject:client];
+            }
         }
     }
     

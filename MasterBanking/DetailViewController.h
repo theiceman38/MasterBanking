@@ -10,6 +10,7 @@
 #import <MapKit/MapKit.h>
 
 #import "Bank.h"
+#import "ClientTableViewController.h"
 
 @interface DetailViewController : UIViewController
 
